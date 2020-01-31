@@ -4,15 +4,40 @@ using UnityEngine;
 
 public class BirdScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private SpriteRenderer spriteRendererComponent;
+    public GameObject bird;
+    public Vector2 birdLocation;
+    public Vector2 Speed = new Vector2(20*Time.deltaTime, 0);
+    public Vector2 spriteSize;
+    Vector2 position;
+    public float nextSpawn;
+
+    private void Awake()
     {
-        
+        spriteRendererComponent = GetComponent<SpriteRenderer>();
+    }
+    public void Start()
+    {
+        if (spriteRendererComponent != null)
+        {
+            spriteSize = spriteRendererComponent.transform.lossyScale;
+            Debug.Log(spriteSize);
+        }
+        nextSpawn = Time.time + 2;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+        if (Time.time > nextSpawn)
+        {
+            position = new Vector2(Random.Range(0f, 300f), Random.Range(0.0f, 300f));
+            Instantiate(bird, position, Quaternion.identity);
+
+
+
+            nextSpawn += 2;
+        }
+        birdLocation = bird.transform.position;
     }
 }
