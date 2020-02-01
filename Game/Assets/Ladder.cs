@@ -22,17 +22,11 @@ public class Ladder : MonoBehaviour
         {
             other.attachedRigidbody.isKinematic = true;
             other.attachedRigidbody.gravityScale = 0.0f;
+            other.attachedRigidbody.velocity = Vector3.zero;
+            other.attachedRigidbody.angularVelocity = 0.0f;
         }
     }
 
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            other.attachedRigidbody.isKinematic = true;
-            other.attachedRigidbody.gravityScale = 0.0f;
-        }
-    }
 
     void OnTriggerExit2D(Collider2D other)
     {
