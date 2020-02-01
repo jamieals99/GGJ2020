@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ResourceManagerDeck : MonoBehaviour
@@ -27,6 +28,11 @@ public class ResourceManagerDeck : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I) && Time.timeScale > 0)
         {
             metal += 10;
+        }
+
+        if (hp.health <= 0)
+        {
+            SceneManager.LoadScene(2);
         }
     }
 

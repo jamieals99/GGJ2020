@@ -6,8 +6,8 @@ public class BirdScript : MonoBehaviour
 {
     private BirdScript birdScript;
     public GameObject bird;
-    public GameObject Camera;
     int Bird;
+    public Camera cam;
     public Vector2 spriteSize;
     Vector2 position;
     public float nextSpawn;
@@ -16,11 +16,12 @@ public class BirdScript : MonoBehaviour
     public void Start()
     {
         nextSpawn = Time.time + 5;
+        cam = FindObjectOfType<Camera>();
     }
 
     public void FixedUpdate()
     {
-        cameraPosition = Camera.transform.position;
+        cameraPosition = cam.transform.position;
         if (Time.time > nextSpawn)
         {
             position = new Vector2(Random.Range(cameraPosition.x + 25, cameraPosition.x + 45f), Random.Range(-1f, 5f));

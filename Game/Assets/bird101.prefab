@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bird: {fileID: 1766721448731924479}
-  Camera: {fileID: 0}
+  cam: {fileID: 8997990548077986725, guid: 676c093fd8346ad429dab2f61389ce8c, type: 3}
   spriteSize: {x: 0, y: 0}
   nextSpawn: 0
 --- !u!114 &1766721448731924464

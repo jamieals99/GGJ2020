@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ResourceManagerHull : MonoBehaviour
@@ -29,6 +30,12 @@ public class ResourceManagerHull : MonoBehaviour
         {
             wood += 10;
         }
+
+        if(hp.health <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
+
     }
 
     void OnTriggerStay2D(Collider2D other)
