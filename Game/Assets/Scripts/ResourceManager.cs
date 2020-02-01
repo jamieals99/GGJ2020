@@ -6,16 +6,17 @@ using UnityEngine.UI;
 
 public class ResourceManager : MonoBehaviour
 {
-    private int tape, metal, wood;
+    private int startingAmounts = 20;
+    public int tape, metal, wood;
     public Text tapeAmount, metalAmount, woodAmount;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        tape = 0;
-        metal = 0;
-        wood = 0;
+        tape = startingAmounts;
+        metal = startingAmounts;
+        wood = startingAmounts;
     }
 
     // Update is called once per frame
@@ -39,33 +40,5 @@ public class ResourceManager : MonoBehaviour
         {
             wood += 10;
         }
-    }
-
-    public void TapeIncrease(int amount)
-    {
-        tape += amount;
-    }
-    public void TapeDecrease(int amount)
-    {
-        tape -= amount;
-    }
-
-    public void MetalIncrease(int amount)
-    {
-        metal += amount;
-    }
-    public void MetalDecrease(int amount)
-    {
-        metal -= amount;
-    }
-
-    public void WoodIncrease(int amount)
-    {
-        wood += amount;
-    }
-
-    public void WoodDecrease(int amount)
-    {
-        wood -= amount;
     }
 }
