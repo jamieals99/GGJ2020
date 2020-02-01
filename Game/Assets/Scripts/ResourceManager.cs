@@ -24,17 +24,17 @@ public class ResourceManager : MonoBehaviour
         metalAmount.text = "" + metal;
         woodAmount.text = "" + wood;
 
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetKeyDown(KeyCode.U) && Time.timeScale > 0)
         {
             tape += 10;
         }
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && Time.timeScale > 0)
         {
             metal += 10;
         }
 
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O) && Time.timeScale > 0)
         {
             wood += 10;
         }
