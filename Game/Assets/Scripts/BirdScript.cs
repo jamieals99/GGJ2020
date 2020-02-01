@@ -18,7 +18,7 @@ public class BirdScript : MonoBehaviour
         nextSpawn = Time.time + 5;
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         cameraPosition = Camera.transform.position;
         if (Time.time > nextSpawn)

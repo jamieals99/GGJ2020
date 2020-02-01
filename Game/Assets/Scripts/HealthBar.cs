@@ -27,6 +27,13 @@ public class HealthBar : MonoBehaviour
         }
     }
 
+    public void RepairDamage(float amount)
+    {
+        health += amount;
+        healthBar.fillAmount = health / startHealth;
+    }
+
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.H) && Time.timeScale > 0)

@@ -8,6 +8,9 @@ TagManager:
   - Platform
   - Bottom Platform
   - Test
+  - Hull
+  - Deck
+  - Balloon
   layers:
   - Default
   - TransparentFX
