@@ -4,8 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PauseMenuButtons : MonoBehaviour
+public class ButtonScript : MonoBehaviour
 {
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
