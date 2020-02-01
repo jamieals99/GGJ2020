@@ -4,37 +4,30 @@ using UnityEngine;
 
 public class BirdScript : MonoBehaviour
 {
-    private SpriteRenderer spriteRendererComponent;
+    private BirdScript birdScript;
     public GameObject bird;
+    public GameObject Camera;
+    int Bird;
     public Vector2 spriteSize;
     Vector2 position;
     public float nextSpawn;
 
-    private void Awake()
-    {
-        spriteRendererComponent = GetComponent<SpriteRenderer>();
-    }
+    Vector3 cameraPosition;
     public void Start()
     {
-        if (spriteRendererComponent != null)
-        {
-            spriteSize = spriteRendererComponent.transform.lossyScale;
-            Debug.Log(spriteSize);
-        }
-        nextSpawn = Time.time + 2;
-
+        nextSpawn = Time.time + 5;
     }
 
     public void Update()
     {
+        cameraPosition = Camera.transform.position;
         if (Time.time > nextSpawn)
         {
-            position = new Vector2(Random.Range(0f, 300f), Random.Range(0.0f, 300f));
+            position = new Vector2(Random.Range(cameraPosition.x + 25, cameraPosition.x + 45f), Random.Range(-1f, 5f));
             Instantiate(bird, position, Quaternion.identity);
 
-
-
-            nextSpawn += 2;
+            nextSpawn += 5;
         }
+        
     }
 }
