@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class BirdMovement : MonoBehaviour
+public class Crate2Movement : MonoBehaviour
 {
+    // Start is called before the first frame update
     public float speed;
     // Start is called before the first frame update
     void Start()
     {
-        speed = 6f;
+        speed = 8f;
     }
 
     void FixedUpdate()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
-        Destroy(gameObject, 5f);
+        Destroy(gameObject,4f);
     }
 }
-
