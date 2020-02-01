@@ -11,6 +11,8 @@ TagManager:
   - Hull
   - Deck
   - Balloon
+  - Green Bird
+  - Bird
   layers:
   - Default
   - TransparentFX
