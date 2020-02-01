@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48660931}
   - component: {fileID: 48660930}
+  - component: {fileID: 48660932}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -291,6 +292,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &48660932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48660929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d30dac40826b04088ddd3bc3be8761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bird: {fileID: 1478936184}
+  spriteSize: {x: 0, y: 0}
+  nextSpawn: 0
 --- !u!1 &74163689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1478936186}
   - component: {fileID: 1478936185}
+  - component: {fileID: 1478936187}
   m_Layer: 0
   m_Name: bird101
   m_TagString: Untagged
@@ -1245,7 +1262,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c17cbe806ce57714c89166f5b7d8b572, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.24, y: 0.24}
@@ -1268,6 +1285,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1478936187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478936184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0920a13266f279f4e95f834f5bef9876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 750
 --- !u!1 &1482880099
 GameObject:
   m_ObjectHideFlags: 0

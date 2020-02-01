@@ -6,8 +6,6 @@ public class BirdScript : MonoBehaviour
 {
     private SpriteRenderer spriteRendererComponent;
     public GameObject bird;
-    public Vector2 birdLocation;
-    public Vector2 Speed = new Vector2(20*Time.deltaTime, 0);
     public Vector2 spriteSize;
     Vector2 position;
     public float nextSpawn;
@@ -38,6 +36,5 @@ public class BirdScript : MonoBehaviour
 
             nextSpawn += 2;
         }
-        birdLocation = bird.transform.position;
     }
 }
