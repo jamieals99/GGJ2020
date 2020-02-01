@@ -12,7 +12,7 @@ public class BirdMovement : MonoBehaviour
         
     }
 
-    void Update()
+    void FixedUpdate()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
         Destroy(gameObject, 6f);
