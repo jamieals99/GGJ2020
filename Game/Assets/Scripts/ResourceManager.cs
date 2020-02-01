@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ResourceManager : MonoBehaviour
 {
     private int tape, metal, wood;
@@ -38,5 +39,33 @@ public class ResourceManager : MonoBehaviour
         {
             wood += 10;
         }
+    }
+
+    public void TapeIncrease(int amount)
+    {
+        tape += amount;
+    }
+    public void TapeDecrease(int amount)
+    {
+        tape -= amount;
+    }
+
+    public void MetalIncrease(int amount)
+    {
+        metal += amount;
+    }
+    public void MetalDecrease(int amount)
+    {
+        metal -= amount;
+    }
+
+    public void WoodIncrease(int amount)
+    {
+        wood += amount;
+    }
+
+    public void WoodDecrease(int amount)
+    {
+        wood -= amount;
     }
 }
