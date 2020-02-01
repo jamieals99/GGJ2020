@@ -1,34 +1,46 @@
 fileFormatVersion: 2
-guid: fdc98752d4cae3949b5b756c70751287
+guid: f26ca7c8911723a4ea2e4d4da613c7dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7265313343042191254
-    second: Props_0
+      213: -4221033750731383225
+    second: Blimpy McBlimp(full, color)_0
   - first:
-      213: -4871644234308700824
-    second: Props_1
+      213: 5278887716467091733
+    second: Blimpy McBlimp(full, color)_1
   - first:
-      213: 7466427622202046938
-    second: Props_2
+      213: -3719233646291940292
+    second: Blimpy McBlimp(full, color)_2
   - first:
-      213: 4489838820935638777
-    second: Props_3
+      213: -5043253999723864993
+    second: Blimpy McBlimp(full, color)_3
   - first:
-      213: -1870876656750283219
-    second: Props_4
+      213: 7576374959621332873
+    second: Blimpy McBlimp(full, color)_4
   - first:
-      213: -4004860913340282569
-    second: Props_5
+      213: -789114335314941793
+    second: Blimpy McBlimp(full, color)_5
   - first:
-      213: -6362549862341014049
-    second: Props_6
+      213: 3364698810219342015
+    second: Blimpy McBlimp(full, color)_6
   - first:
-      213: -9085773957535209297
-    second: Props_7
+      213: 4494262361683399882
+    second: Blimpy McBlimp(full, color)_7
   - first:
-      213: 4556875247267356194
-    second: Props_8
+      213: -1714260715983913093
+    second: Blimpy McBlimp(full, color)_8
+  - first:
+      213: -2678279334497907268
+    second: Blimpy McBlimp(full, color)_9
+  - first:
+      213: 2039376197403257599
+    second: Blimpy McBlimp(full, color)_10
+  - first:
+      213: 8606061603280642833
+    second: Blimpy McBlimp(full, color)_11
+  - first:
+      213: 3119812555572546148
+    second: Blimpy McBlimp(full, color)_12
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -161,190 +173,274 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Props_0
+      name: Blimpy McBlimp(full, color)_0
       rect:
         serializedVersion: 2
-        x: 2853
-        y: 3823
-        width: 21
-        height: 17
+        x: 385
+        y: 3834
+        width: 2592
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb0a7a76fc089154fac746e47226816c
-      internalID: 7265313343042191254
+      spriteID: 34241af77c67a5242af3a4276360e451
+      internalID: -4221033750731383225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Props_1
+      name: Blimpy McBlimp(full, color)_1
       rect:
         serializedVersion: 2
-        x: 5455
-        y: 283
-        width: 731
-        height: 1379
+        x: 3905
+        y: 2857
+        width: 1392
+        height: 1077
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb18964d660e63f4f8d0b8fa990b65c8
-      internalID: -4871644234308700824
+      spriteID: 6782a48961f7e454e975c2f9b2bdc60c
+      internalID: 5278887716467091733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Props_2
+      name: Blimpy McBlimp(full, color)_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1744
+        width: 75
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef21fcd111dc6840bc440500b1d0d31
+      internalID: -3719233646291940292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimpy McBlimp(full, color)_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 690
+        width: 2857
+        height: 2620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a39957c82fcf7741ae76de34a4af5bc
+      internalID: -5043253999723864993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimpy McBlimp(full, color)_4
+      rect:
+        serializedVersion: 2
+        x: 3802
+        y: 2219
+        width: 1145
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbea7c4c20f92394f9a5d326387ef8a4
+      internalID: 7576374959621332873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimpy McBlimp(full, color)_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1573
+        width: 63
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84eed1299f58424ab811896abded4a3
+      internalID: -789114335314941793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimpy McBlimp(full, color)_6
+      rect:
+        serializedVersion: 2
+        x: 3983
+        y: 1594
+        width: 260
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655c9596a31dbbb45a69cee811b361f9
+      internalID: 3364698810219342015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimpy McBlimp(full, color)_7
+      rect:
+        serializedVersion: 2
+        x: 4953
+        y: 1633
+        width: 148
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379172299baf939409107c4b272e63d0
+      internalID: 4494262361683399882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimpy McBlimp(full, color)_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 153
-        width: 814
-        height: 2253
+        y: 723
+        width: 71
+        height: 831
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1b069c4c15ae674ea32f6229053dfa6
-      internalID: 7466427622202046938
+      spriteID: 9688b43ecb2c3d244a6e9553e0cf3cd7
+      internalID: -1714260715983913093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Props_3
+      name: Blimpy McBlimp(full, color)_9
       rect:
         serializedVersion: 2
-        x: 950
-        y: 153
-        width: 1096
-        height: 2178
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c753229ee744dc47aeb38eb3c1d7f51
-      internalID: 4489838820935638777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Props_4
-      rect:
-        serializedVersion: 2
-        x: 2483
-        y: 211
-        width: 704
-        height: 704
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a0702f14c2da4041bfed03edfc8cf66
-      internalID: -1870876656750283219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Props_5
-      rect:
-        serializedVersion: 2
-        x: 3439
-        y: 192
-        width: 583
-        height: 461
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6164dff249be9344cba3b08236fb7e54
-      internalID: -4004860913340282569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Props_6
-      rect:
-        serializedVersion: 2
-        x: 4323
-        y: 116
-        width: 560
-        height: 559
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb6bfcf4352c4114cbe568746fb448de
-      internalID: -6362549862341014049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Props_7
-      rect:
-        serializedVersion: 2
-        x: 5659
+        x: 3552
         y: 0
-        width: 172
-        height: 291
+        width: 2635
+        height: 1248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ab814ebed417c547b2453556fd2f7b6
-      internalID: -9085773957535209297
+      spriteID: e6e7512efe7b9494cb145323f8514347
+      internalID: -2678279334497907268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Props_8
+      name: Blimpy McBlimp(full, color)_10
       rect:
         serializedVersion: 2
-        x: 5855
-        y: 5
-        width: 133
-        height: 274
+        x: 910
+        y: 295
+        width: 871
+        height: 71
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c02cbdd4f4b7334d8b2dc12cb8720d2
-      internalID: 4556875247267356194
+      spriteID: 5a5f43923a5017249874759aa997fef9
+      internalID: 2039376197403257599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimpy McBlimp(full, color)_11
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 276
+        width: 194
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9fe55d4b281be40873afe200d4d955
+      internalID: 8606061603280642833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimpy McBlimp(full, color)_12
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 0
+        width: 973
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974b73adca1053c4d88ba37c47f3ad67
+      internalID: 3119812555572546148
       vertices: []
       indices: 
       edges: []
