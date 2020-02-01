@@ -7,8 +7,9 @@ using UnityEngine.UI;
 public class ResourceManager : MonoBehaviour
 {
     private int startingAmounts = 20;
-    public int tape, metal, wood;
+    public float tape, metal, wood;
     public Text tapeAmount, metalAmount, woodAmount;
+    float objectHealth;
 
 
     // Start is called before the first frame update
@@ -17,6 +18,8 @@ public class ResourceManager : MonoBehaviour
         tape = startingAmounts;
         metal = startingAmounts;
         wood = startingAmounts;
+        objectHealth = 0f;
+
     }
 
     // Update is called once per frame
@@ -39,6 +42,25 @@ public class ResourceManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O) && Time.timeScale > 0)
         {
             wood += 10;
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            if (Input.GetKey(KeyCode.E) && Time.deltaTime > 0)
+            {
+                if (objectHealth < 100 && tape > 0.5 && metal > 0.5 && wood > 0.5)
+                {
+                    tape -= 0.5f;
+                    metal -= 0.5f;
+                    wood -= 0.5f;
+
+                    objectHealth += 0.5f;
+                    Debug.Log(objectHealth);
+                }
+            }
         }
     }
 }
