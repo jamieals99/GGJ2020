@@ -21,15 +21,22 @@ public class ShipControl : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.W) && Time.deltaTime > 0)
+            if (transform.position.y < 2.5)
             {
-                transform.position += Vector3.up * speed * Time.deltaTime;
+                if (Input.GetKey(KeyCode.W) && Time.deltaTime > 0)
+                {
+                    transform.position += Vector3.up * speed * Time.deltaTime;
+                }
             }
-
-            if (Input.GetKey(KeyCode.S) &&  Time.deltaTime > 0)
+            
+            if (transform.position.y > -1.5)
             {
-                transform.position += Vector3.down * speed * Time.deltaTime;
+                if (Input.GetKey(KeyCode.S) && Time.deltaTime > 0)
+                {
+                    transform.position += Vector3.down * speed * Time.deltaTime;
+                }
             }
+            
         }
     }
 }

@@ -21,14 +21,14 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D) && Time.deltaTime > 0)
         {
-            
             transform.position += Vector3.right * speed * Time.deltaTime;
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
         if (Input.GetKey(KeyCode.A) && Time.deltaTime > 0)
-        {
-
+        { 
             transform.position += Vector3.left * speed * Time.deltaTime;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
         if (Input.GetKey(KeyCode.W) && inLadder && Time.deltaTime > 0)
