@@ -26,11 +26,12 @@ public class ResourceManagerHull : MonoBehaviour
     {
         woodAmount.text = "" + wood;
 
+        /*
         if (Input.GetKeyDown(KeyCode.O) && Time.timeScale > 0)
         {
             wood += 10;
         }
-
+        */
         if(hp.health <= 0)
         {
             SceneManager.LoadScene(2);

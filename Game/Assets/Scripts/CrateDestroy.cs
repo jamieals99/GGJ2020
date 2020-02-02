@@ -29,9 +29,9 @@ public class CrateDestroy : MonoBehaviour
         if(other.gameObject.tag == "Harpoon")
         {
             // add resources OR // add maill to main deck for player tocollect
-            tape.GetComponent<ResourceManagerBalloon>().tape += 2;
-            metal.GetComponent<ResourceManagerDeck>().metal += 2;
-            wood.GetComponent<ResourceManagerHull>().wood += 2;
+            tape.GetComponent<ResourceManagerBalloon>().tape += 15;
+            metal.GetComponent<ResourceManagerDeck>().metal += 10;
+            wood.GetComponent<ResourceManagerHull>().wood += 20;
 
 
             // destroy crate

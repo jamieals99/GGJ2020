@@ -24,12 +24,12 @@ public class ResourceManagerDeck : MonoBehaviour
     void Update()
     {
         metalAmount.text = "" + metal;
-
+        /*
         if (Input.GetKeyDown(KeyCode.I) && Time.timeScale > 0)
         {
             metal += 10;
         }
-
+        */
         if (hp.health <= 0)
         {
             SceneManager.LoadScene(2);

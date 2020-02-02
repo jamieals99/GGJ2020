@@ -36,14 +36,6 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H) && Time.timeScale > 0)
-        {
-            TakeDamage(10f);
-        }
 
-        if (Input.GetKeyDown(KeyCode.J) && Time.timeScale > 0)
-        {
-            TakeDamage(20f);
-        }
     }
 }

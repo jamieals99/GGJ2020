@@ -25,12 +25,12 @@ public class ResourceManagerBalloon: MonoBehaviour
     void Update()
     {
         tapeAmount.text = "" + tape;
-
+        /*
         if (Input.GetKeyDown(KeyCode.U) && Time.timeScale > 0)
         {
             tape += 10;
         }
-
+        */
         if (hp.health <= 0)
         {
             SceneManager.LoadScene(2);
