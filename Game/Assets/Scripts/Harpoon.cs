@@ -15,7 +15,7 @@ public class Harpoon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 10f;
+        speed = 5f;
         fired = false;
         cam = FindObjectOfType<Camera>();
         
