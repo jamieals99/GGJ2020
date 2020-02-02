@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 8229631}
   - component: {fileID: 8229630}
   - component: {fileID: 8229629}
+  - component: {fileID: 8229633}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -292,6 +293,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &8229633
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229628}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 687f64f4d7af2524983f0b8080707b14, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &14626944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,7 +2509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crate2: {fileID: 4530273896806060672, guid: da0c8f5c81747584da9405e00a1ac0dd, type: 3}
   cam: {fileID: 0}
-  nextSpawn2: 0
+  nextSpawn3: 0
 --- !u!1 &686354809
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,6 +3578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e7f2d0ed99e5d41a0dee38efc556ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biranAnimation: {fileID: 0}
 --- !u!50 &812736358
 Rigidbody2D:
   serializedVersion: 4
@@ -4129,6 +4227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f24c78c088e3a047ab59f1e2704edff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  metal: 0
   metalAmount: {fileID: 863201153}
 --- !u!61 &914425315
 BoxCollider2D:
@@ -4852,6 +4951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c682213fa095546b00b5bfb749cd4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tape: 0
   tapeAmount: {fileID: 1499449974}
 --- !u!61 &1083220099
 BoxCollider2D:
@@ -5479,6 +5579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1dd3970f93c800458e107320517b52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wood: 0
   woodAmount: {fileID: 1075985635}
 --- !u!61 &1280976559
 BoxCollider2D:
@@ -8948,7 +9049,7 @@ GameObject:
   - component: {fileID: 1901190594}
   m_Layer: 0
   m_Name: Placeholder Harpoon
-  m_TagString: Untagged
+  m_TagString: Harpoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
