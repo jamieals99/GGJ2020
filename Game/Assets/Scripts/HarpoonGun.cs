@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class HarpoonGun : MonoBehaviour
 {
-    Vector3 screenPoint = Input.mousePosition;
+    private Vector3 screenPoint;
     public GameObject crosshair;
     public bool usingHarpoon;
     public GameObject harpoonGun;
     // Start is called before the first frame update
     void Start()
     {
+
+        screenPoint = Input.mousePosition;
         usingHarpoon = false;
     }
 
