@@ -7,29 +7,29 @@ public class Menu : MonoBehaviour
 {
     private bool paused;
     public GameObject PauseMenu;
+    public GameObject TutScreen;
 
     // Start is called before the first frame update
     void Start()
     {
         paused = false;
+        TutScreen.SetActive(true);
         PauseMenu.SetActive(false);
-        Debug.Log("Test");
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if((Input.GetKeyDown(KeyCode.Escape)) && (paused == false))
+        if((Input.GetKeyDown(KeyCode.Escape)) && (paused == false) && (Time.timeScale > 0))
         {
-            Debug.Log("Test2");
             paused = true;
             PauseMenu.SetActive(true);
             Time.timeScale = 0;
         }
 
-        else if(Input.GetKeyDown(KeyCode.Escape) && paused)
+        else if(Input.GetKeyDown(KeyCode.Escape) && (paused == true) && (Time.timeScale <= 0))
         {
-            Debug.Log("Test3");
             Time.timeScale = 1;
             PauseMenu.SetActive(false);
             paused = false;

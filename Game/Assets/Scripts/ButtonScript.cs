@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
+    public GameObject tutorialScreen;
+
+    public void CloseTutorial()
+    {
+        tutorialScreen.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene(1);

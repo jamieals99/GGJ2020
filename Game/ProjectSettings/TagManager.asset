@@ -13,6 +13,7 @@ TagManager:
   - Balloon
   - Green Bird
   - Bird
+  - menu
   layers:
   - Default
   - TransparentFX
