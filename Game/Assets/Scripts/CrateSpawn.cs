@@ -21,7 +21,7 @@ public class CrateSpawn : MonoBehaviour
         cameraPosition = cam.transform.position;
         if (Time.timeSinceLevelLoad > nextSpawn2)
         {
-            position = new Vector2(Random.Range(cameraPosition.x + 3, cameraPosition.x + 10f), Random.Range(5, 15f));
+            position = new Vector2(Random.Range(cameraPosition.x + 3, cameraPosition.x + 6f), Random.Range(5, 15f));
             Instantiate(crate, position, Quaternion.identity);
 
             nextSpawn2 += 7;

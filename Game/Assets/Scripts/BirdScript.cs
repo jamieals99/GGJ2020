@@ -28,20 +28,15 @@ public class BirdScript : MonoBehaviour
             {
                 position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
                 Instantiate(bird, position, Quaternion.identity);
-
-                nextSpawn += 7;
-            }
-            else if (nextSpawn > 30 && nextSpawn <= 90)
-            {
-                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
-                Instantiate(bird, position, Quaternion.identity);
                 position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
                 Instantiate(bird, position, Quaternion.identity);
 
                 nextSpawn += 7;
             }
-            else if (nextSpawn > 90 && nextSpawn <= 180)
+            else if (nextSpawn > 30 && nextSpawn <= 60)
             {
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
                 position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
                 Instantiate(bird, position, Quaternion.identity);
                 position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
@@ -51,8 +46,34 @@ public class BirdScript : MonoBehaviour
 
                 nextSpawn += 7;
             }
-            else if (nextSpawn > 180 && nextSpawn <= 240)
+            else if (nextSpawn > 60 && nextSpawn <= 90)
             {
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+
+
+                nextSpawn += 7;
+            }
+            else if (nextSpawn > 90 && nextSpawn <= 120)
+            {
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
                 position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
                 Instantiate(bird, position, Quaternion.identity);
                 position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
@@ -66,6 +87,30 @@ public class BirdScript : MonoBehaviour
             }
             else
             {
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
+                position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
+                Instantiate(bird, position, Quaternion.identity);
                 position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));
                 Instantiate(bird, position, Quaternion.identity);
                 position = new Vector2(Random.Range(cameraPosition.x + 20, cameraPosition.x + 25f), Random.Range(-5f, 5f));

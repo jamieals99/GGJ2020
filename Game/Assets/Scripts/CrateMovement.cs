@@ -25,14 +25,6 @@ public class CrateMovement : MonoBehaviour
 
         Destroy(gameObject, 5f);
     }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Bird")
-        {
-            other.gameObject.SetActive(false);
-            Debug.Log("Bird hit crate and died");
-        }
-
        /* if (other.gameObject.tag == "Harpoon")
         {
             // add resources OR // add maill to main deck for player tocollect
@@ -42,5 +34,4 @@ public class CrateMovement : MonoBehaviour
             // destroy crate
             Destroy(gameObject);
         }*/
-    }
 }
