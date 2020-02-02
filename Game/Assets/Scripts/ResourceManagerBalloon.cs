@@ -47,7 +47,7 @@ public class ResourceManagerBalloon: MonoBehaviour
                 {
                     hp.RepairDamage(1);
                     tape -= 1f;
-                    Debug.Log("Balloon Repair");
+                    //Debug.Log("Balloon Repair");
                 }
             }
         }

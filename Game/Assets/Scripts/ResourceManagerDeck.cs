@@ -46,7 +46,7 @@ public class ResourceManagerDeck : MonoBehaviour
                 {
                     hp.RepairDamage(1);
                     metal -= 1f;
-                    Debug.Log("Deck Repair");
+                    //Debug.Log("Deck Repair");
                 }
             }
         }

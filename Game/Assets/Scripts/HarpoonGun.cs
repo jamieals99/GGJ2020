@@ -11,7 +11,6 @@ public class HarpoonGun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         screenPoint = Input.mousePosition;
         usingHarpoon = false;
     }

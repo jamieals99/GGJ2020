@@ -10,7 +10,7 @@ public class ShipDamage : MonoBehaviour
         {
             GetComponentInParent<HealthBar>().TakeDamage(10);
             other.gameObject.SetActive(false);
-            Debug.Log("Damage from Trigger box");
+            //Debug.Log("Damage from Trigger box");
         }
     }
 }

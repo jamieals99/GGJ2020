@@ -48,7 +48,7 @@ public class ResourceManagerHull : MonoBehaviour
                 {
                     hp.RepairDamage(1);
                     wood -= 1f;
-                    Debug.Log("Hull Repair");
+                    //Debug.Log("Hull Repair");
                 }
             }
         }
