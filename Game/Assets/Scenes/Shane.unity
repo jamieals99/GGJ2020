@@ -1654,6 +1654,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319257024}
   m_CullTransparentMesh: 0
+--- !u!1 &364597003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 364597004}
+  - component: {fileID: 364597006}
+  - component: {fileID: 364597005}
+  m_Layer: 0
+  m_Name: Harpoon Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &364597004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364597003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.296, y: -1.632, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 847566380}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &364597005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364597003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da74305b2be9b5641afca015b6fac770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 2029823175}
+  usingHarpoon: 0
+  harpoonGun: {fileID: 701390005}
+--- !u!61 &364597006
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364597003}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.040457487, y: -0.14848623}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6167693, y: 0.61549014}
+  m_EdgeRadius: 0
 --- !u!1 &368698952
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,7 +3233,6 @@ GameObject:
   m_Component:
   - component: {fileID: 701390006}
   - component: {fileID: 701390007}
-  - component: {fileID: 701390008}
   m_Layer: 0
   m_Name: Harpoon Gun
   m_TagString: Untagged
@@ -3234,19 +3306,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &701390008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 701390005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da74305b2be9b5641afca015b6fac770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crosshair: {fileID: 0}
 --- !u!1 &719987178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3645,6 +3704,7 @@ Transform:
   - {fileID: 719987179}
   - {fileID: 907451708}
   - {fileID: 1236270458}
+  - {fileID: 364597004}
   m_Father: {fileID: 1678623439}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4637,7 +4697,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.5775049, y: -0.021110892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4648,7 +4708,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.96, y: 5.64}
+  m_Size: {x: 1.6126988, y: 1.6070154}
   m_EdgeRadius: 0
 --- !u!114 &1026641073
 MonoBehaviour:
@@ -4664,6 +4724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   harpoon: {fileID: 701390005}
+  airship: {fileID: 847566379}
+  harpoonManager: {fileID: 364597003}
 --- !u!1 &1030697552
 GameObject:
   m_ObjectHideFlags: 0
@@ -6839,7 +6901,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2029823176}
   - component: {fileID: 2029823177}
-  - component: {fileID: 2029823178}
   m_Layer: 0
   m_Name: Crosshair
   m_TagString: Untagged
@@ -6911,18 +6972,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2029823178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029823175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21314f2081418af448cac863ba6aca15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2121841655
 GameObject:
   m_ObjectHideFlags: 0

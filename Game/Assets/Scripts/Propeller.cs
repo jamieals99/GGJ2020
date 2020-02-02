@@ -13,28 +13,30 @@ public class Propeller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.name == "Bottom Propeller")
+        if(Time.deltaTime > 0)
         {
-            if (gameObject.GetComponent<SpriteRenderer>().flipX == false)
+            if (gameObject.name == "Bottom Propeller")
             {
-                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                if (gameObject.GetComponent<SpriteRenderer>().flipX == false)
+                {
+                    gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                }
+                else if (gameObject.GetComponent<SpriteRenderer>().flipX == true)
+                {
+                    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                }
             }
-            else if (gameObject.GetComponent<SpriteRenderer>().flipX == true)
+            else if (gameObject.name == "Back Propeller")
             {
-                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                if (gameObject.GetComponent<SpriteRenderer>().flipY == false)
+                {
+                    gameObject.GetComponent<SpriteRenderer>().flipY = true;
+                }
+                else if (gameObject.GetComponent<SpriteRenderer>().flipY == true)
+                {
+                    gameObject.GetComponent<SpriteRenderer>().flipY = false;
+                }
             }
         }
-        else if(gameObject.name == "Back Propeller")
-        {
-            if (gameObject.GetComponent<SpriteRenderer>().flipY == false)
-            {
-                gameObject.GetComponent<SpriteRenderer>().flipY = true;
-            }
-            else if (gameObject.GetComponent<SpriteRenderer>().flipY == true)
-            {
-                gameObject.GetComponent<SpriteRenderer>().flipY = false;
-            }
-        }
-
     }
 }
