@@ -8,7 +8,7 @@ public class ResourceManagerBalloon: MonoBehaviour
 {
 
     private int startingAmount = 20;
-    private float tape;
+    public float tape;
     public Text tapeAmount;
     HealthBar hp;
 

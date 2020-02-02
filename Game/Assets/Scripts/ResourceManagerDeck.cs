@@ -9,7 +9,7 @@ public class ResourceManagerDeck : MonoBehaviour
 {
 
     private int startingAmount = 20;
-    private float metal;
+    public float metal;
     public Text  metalAmount;
     HealthBar hp;
 

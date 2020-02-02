@@ -9,7 +9,7 @@ public class ResourceManagerHull : MonoBehaviour
 {
 
     private int startingAmount = 20;
-    private float wood;
+    public float wood;
     public Text woodAmount;
     HealthBar hp;
 
