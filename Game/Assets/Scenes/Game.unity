@@ -3816,7 +3816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232.65009, y: -45.789917}
+  m_AnchoredPosition: {x: -232.65009, y: -45.789795}
   m_SizeDelta: {x: 125.06, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877133374
@@ -6918,7 +6918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -99.3501, y: -45.789917}
+  m_AnchoredPosition: {x: -99.3501, y: -45.789795}
   m_SizeDelta: {x: 125.06, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504491880
@@ -7984,7 +7984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -363.8501, y: -45.789917}
+  m_AnchoredPosition: {x: -363.8501, y: -45.789795}
   m_SizeDelta: {x: 125.06, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714914836
@@ -8944,8 +8944,8 @@ GameObject:
   - component: {fileID: 1901190592}
   - component: {fileID: 1901190596}
   - component: {fileID: 1901190595}
-  - component: {fileID: 1901190594}
   - component: {fileID: 1901190593}
+  - component: {fileID: 1901190594}
   m_Layer: 0
   m_Name: Placeholder Harpoon
   m_TagString: Untagged
@@ -8988,8 +8988,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1901190594
-BoxCollider2D:
+--- !u!60 &1901190594
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9001,7 +9001,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5775049, y: -0.021110892}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9011,9 +9011,26 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6126988, y: 1.6070154}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.030377507, y: 0.297848}
+      - {x: 0.13215482, y: 0.43652585}
+      - {x: 0.19860825, y: 0.53848904}
+      - {x: 0.19366565, y: 0.6851344}
+      - {x: 0.1571739, y: 0.7333263}
+      - {x: 0.023057967, y: 0.74015754}
+      - {x: -0.09415114, y: 0.6638901}
+      - {x: -0.25924653, y: 0.517401}
+      - {x: -0.28838584, y: 0.35362443}
+      - {x: -0.3906049, y: 0.2219271}
+      - {x: -0.62864196, y: 0.035473093}
+      - {x: -1.1309828, y: -0.430225}
+      - {x: -1.11, y: -0.48999998}
+      - {x: -1.09, y: -0.51}
+      - {x: -1.0183792, y: -0.5556649}
+      - {x: -0.7070185, y: -0.27328783}
+      - {x: -0.24528238, y: 0.124337815}
+      - {x: -0.10664041, y: 0.24886453}
 --- !u!114 &1901190595
 MonoBehaviour:
   m_ObjectHideFlags: 0
