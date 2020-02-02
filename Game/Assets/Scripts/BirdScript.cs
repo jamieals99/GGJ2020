@@ -15,14 +15,14 @@ public class BirdScript : MonoBehaviour
     Vector3 cameraPosition;
     public void Start()
     {
-        nextSpawn = Time.time + 7;
+        nextSpawn = Time.timeSinceLevelLoad + 7;
         cam = FindObjectOfType<Camera>();
     }
 
     public void FixedUpdate()
     {
         cameraPosition = cam.transform.position;
-        if (Time.time > nextSpawn)
+        if (Time.timeSinceLevelLoad > nextSpawn)
         {
             if (nextSpawn <= 30)
             {
